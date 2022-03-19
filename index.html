@@ -5,9 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Calculator</title>
   </head>
   <body>
+    <main>
+      <div id="calculator">
+        <div id="screen">
+          <p id="display_prev"></p>
+          <p id="display_curr">0</p>
+        </div>
+        <div class="buttons-grid">
+          <button class="btn" id="clearBtn">C</button>
+          <button class="btn" id="delBtn">Del</button>
+          <button class="btn" data-number>7</button>
+          <button class="btn" data-number>8</button>
+          <button class="btn" data-number>9</button>
+          <button id="op" class="btn" data-operator>÷</button>
+
+          <button class="btn" data-number>4</button>
+          <button class="btn" data-number>5</button>
+          <button class="btn" data-number>6</button>
+          <button id="op" class="btn" data-operator>×</button>
+
+          <button class="btn" data-number>1</button>
+          <button class="btn" data-number>2</button>
+          <button class="btn" data-number>3</button>
+          <button id="op" class="btn" data-operator>-</button>
+
+          <button class="btn" id="dotBtn">.</button>
+          <button class="btn" data-number>0</button>
+          <button class="btn" id="equalBtn">=</button>
+          <button id="op" class="btn" data-operator>+</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        kalPei
+      </p>
+      <a href="https://github.com/Chia9666" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
